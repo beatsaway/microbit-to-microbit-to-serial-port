@@ -1,0 +1,27 @@
+//this script is for microbit that is connected to usb port
+//you can compile it into a hex using the online mbed compiler
+
+#include "MicroBit.h"
+
+MicroBit uBit;
+
+void onData(MicroBitEvent e)
+{
+    ManagedString s = uBit.radio.datagram.recv();
+    uBit.serial.send(s);
+    uBit.serial.send("\r\n");
+}
+
+int main()
+{
+    uBit.init();
+    uBit.serial.baud(115200);
+    uBit.radio.enable();
+    uBit.messageBus.listen(MICROBIT_ID_RADIO, MICROBIT_RADIO_EVT_DATAGRAM, onData);
+    
+
+    while(1){
+        
+        uBit.sleep(200);
+    }
+}
