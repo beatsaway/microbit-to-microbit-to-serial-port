@@ -1,5 +1,6 @@
 //this script is for the microbit that is not connected to usb(but is connected to battery) to send message wirelessly
 //you can compile it into a hex file using the online mbed compiler https://os.mbed.com/compiler
+//or you can ignore this and just use the compiled hex file MicroBitSender.hex
 
 #include "MicroBit.h"
 #include "MicroBitAccelerometer.h"
