@@ -2,7 +2,7 @@
 the microbits are scripted in c++ using mbed online compiler with DAL library
 
 
-this project is to send accelerometer x y z value from microbit(wireless) a to microbit b(usb connected) as a one line message, then send the message from microbit b to unity
+this project is to send accelerometer x y z value from microbit a(wireless) to microbit b(usb connected) as a one line message, then send the message from microbit b to unity
 
 (if you are using PC just change the port name in unity script to COM 1 or 2 or 3 etc instead)
 
