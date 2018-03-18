@@ -11,7 +11,7 @@ if you want to be able to view/edit the script:
 
 step1. go to https://os.mbed.com/users/euxton/code/microbit-dal/   and click import into compiler.
 
-step2. paste the MicroBitSender/MicroBitReceiver script in the main.cpp file and then click compile to get hex files for your microbits.
+step2. paste the microbitSender/microbitReceiver script in the main.cpp file and then click compile to get hex files for your microbits.
 
 step3. drag the hex files into your microbits separately.
 
