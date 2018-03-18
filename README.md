@@ -13,11 +13,12 @@ step1. go to https://os.mbed.com/users/euxton/code/microbit-dal/   and click imp
 
 step2. paste the MicroBitSender/MicroBitReceiver script in the main.cpp file and then click compile to get hex files for your microbits.
 
-step3. go to unity, choose edit>project setting>player then change to Net 2.0 instead of Net 2.0 sub
-
-step4. create a script in unity and paste the attached script.
-
-
+step3. drag the hex files into your microbits separately.
 
 if you just want to use the script:
 drag and drop the hex files into 2 different microbits.
+
+
+now when you import the unity package and click play, you can see the message printed on console.
+
+
