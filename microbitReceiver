@@ -1,6 +1,6 @@
 //this script is for microbit that is connected to usb port
 //you can compile it into a hex using the online mbed compiler
-
+//or you can ignore this and just use the compiled hex file MicroBitReceiver.hex
 #include "MicroBit.h"
 
 MicroBit uBit;
