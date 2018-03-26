@@ -22,7 +22,7 @@ ManagedString getAccelerometerVectors()
     accelerometerVectors.push_back(uBit.accelerometer.getZ());
     for (int i = 0; i < accelerometerVectors.size(); ++i)
     {
-        accelerometerVectorsString = accelerometerVectorsString + (ManagedString)accelerometerVectors[i] + ',';
+        accelerometerVectorsString = accelerometerVectorsString + (ManagedString)accelerometerVectors[i] + ' ';
     }
     return accelerometerVectorsString;
 }
