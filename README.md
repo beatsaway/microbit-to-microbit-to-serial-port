@@ -3,7 +3,7 @@ the microbits are scripted in c++ using mbed online compiler with DAL library
 
 microbit A will send radio message 'a x y z' where a will be identified as the name of that microbit, x y z are values from built in accelerometer. (wireless)
 
-microbit B will send radio message 'a x y p2' where b will be identified as the name of that microbit, x y are values from built in accelerometer. p2 is a value got from the sensor connected to the microbit's pin2. (wireless)
+microbit B will send radio message 'b x y p2' where b will be identified as the name of that microbit, x y are values from built in accelerometer. p2 is a value got from the sensor connected to the microbit's pin2. (wireless)
 
 microbit C will receive radio messages and send it to usb serial port. (connected to usb on laptop)
 
