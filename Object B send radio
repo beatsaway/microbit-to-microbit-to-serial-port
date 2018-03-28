@@ -1,0 +1,43 @@
+#include "MicroBit.h"
+#include "MicroBitConfig.h"
+
+#include "MicroBitPin.h"
+#include "MicroBitAccelerometer.h"
+
+#include <vector>
+#include <string>
+
+MicroBit uBit; //instance of ubit class
+MicroBitI2C i2c = MicroBitI2C(I2C_SDA0, I2C_SCL0); //instance of sth
+MicroBitAccelerometer accelerometer = MicroBitAccelerometer(i2c); //instance of accelerometer class
+MicroBitPin P2(MICROBIT_ID_IO_P2, MICROBIT_PIN_P2, PIN_CAPABILITY_ALL);  //instance of pin p2 class
+
+ManagedString getAccelerometerVectors()
+{
+    ManagedString accelerometerVectorsString = "";
+    vector<int> accelerometerVectors;
+    accelerometerVectors.push_back(uBit.accelerometer.getX());
+    accelerometerVectors.push_back(uBit.accelerometer.getY());
+    accelerometerVectors.push_back(P2.getAnalogValue());
+    for (int i = 0; i < accelerometerVectors.size(); ++i)
+    {
+        accelerometerVectorsString = accelerometerVectorsString + (ManagedString)accelerometerVectors[i] + ' ';
+    }
+    accelerometerVectorsString = "b " + accelerometerVectorsString;
+    return accelerometerVectorsString;
+}
+
+void sendData()
+{
+    uBit.radio.datagram.send(getAccelerometerVectors());
+}  
+int main()
+{
+    uBit.init();
+    uBit.radio.enable();
+    while(1)
+    {
+        sendData();
+        uBit.sleep(20);       
+    }
+}
