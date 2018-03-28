@@ -1,13 +1,16 @@
 # micro-bit-to-micro-bit-accelerometer-data-to-unity
 the microbits are scripted in c++ using mbed online compiler with DAL library
 
+microbit A will send radio message 'a x y z' where a will be identified as the name of that microbit, x y z are values from built in accelerometer. (wireless)
 
-this project is to send accelerometer x y z value from microbit a(wireless) to microbit b(usb connected) as a one line message, then send the message from microbit b to unity
+microbit B will send radio message 'a x y p2' where b will be identified as the name of that microbit, x y are values from built in accelerometer. p2 is a value got from the sensor connected on the microbit's pin2. (wireless)
+
+microbit C will receive radio messages and send it to usb serial port. (connected to usb on laptop)
 
 (if you are using PC just change the port name in unity script to COM 1 or 2 or 3 etc instead)
 
 
-if you want to be able to compile the script:
+to compile the script into hex:
 
 step1. go to https://os.mbed.com/users/euxton/code/microbit-dal/ and click import into compiler.
 
