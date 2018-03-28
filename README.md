@@ -7,7 +7,7 @@ this project is to send accelerometer x y z value from microbit a(wireless) to m
 (if you are using PC just change the port name in unity script to COM 1 or 2 or 3 etc instead)
 
 
-if you want to be able to view/edit the script:
+if you want to be able to compile the script:
 
 step1. go to https://os.mbed.com/users/euxton/code/microbit-dal/   and click import into compiler.
 
