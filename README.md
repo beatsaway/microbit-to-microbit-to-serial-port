@@ -22,6 +22,6 @@ if you just want to use the script:
 drag and drop the hex files into different microbits.
 
 
-now when you import the unity package and click play, you can see the message printed on console.
+now when you import the unity package and click play, you can see the messages printed on console.
 
 
