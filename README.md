@@ -9,14 +9,14 @@ this project is to send accelerometer x y z value from microbit a(wireless) to m
 
 if you want to be able to compile the script:
 
-step1. go to https://os.mbed.com/users/euxton/code/microbit-dal/   and click import into compiler.
+step1. go to https://os.mbed.com/users/euxton/code/microbit-dal/ and click import into compiler.
 
-step2. paste the microbitSender/microbitReceiver script in the main.cpp file and then click compile to get hex files for your microbits.
+step2. paste the script in the main.cpp file and then click compile to get hex files for your microbits.
 
 step3. drag the hex files into your microbits separately.
 
 if you just want to use the script:
-drag and drop the hex files into 2 different microbits.
+drag and drop the hex files into different microbits.
 
 
 now when you import the unity package and click play, you can see the message printed on console.
