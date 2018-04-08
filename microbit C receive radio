@@ -22,6 +22,6 @@ int main()
 
     while(1){
         
-        uBit.sleep(200);
+        uBit.sleep(2);
     }
 }
