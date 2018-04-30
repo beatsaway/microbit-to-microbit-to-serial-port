@@ -1,5 +1,5 @@
 # micro-bit-to-micro-bit-accelerometer-data-to-unity
-These micro-bit scripts and the unity package is for the 2018DMSP project. 
+These microbit scripts and the unity package is for the 2018DMSP project. 
 https://dmsp.digital.eca.ed.ac.uk/blog/multidimensionalobjects2018/
 
 The microbits are scripted in c++ using mbed online compiler with DAL library.
