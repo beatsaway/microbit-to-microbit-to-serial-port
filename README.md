@@ -21,6 +21,6 @@ step2. paste the script in the main.cpp file and then click compile to get hex f
 
 step3. drag the hex files into your microbits drive folder separately.
 
-When you import the unity package and click play, you can check messages received on console.
+When you import the unity package into Unity and click play, you can check messages received on console.
 
 
