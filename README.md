@@ -14,11 +14,11 @@ To compile the microbit script:
 
 step1. go to https://os.mbed.com/users/euxton/code/microbit-dal/ and click import into compiler.
 
-step2. paste the script in the main.cpp file and then click compile to get hex files for your microbits.
+step2. paste the script in the main.cpp file and then click compile to get hex files for your microbit.
 
-step3. drag the hex files into your microbits drive folder separately.
+step3. drag the hex files into your microbit driver folder separately.
 
-When you import the unity package into Unity and click play, you can check messages received on console.
+When you import the unity package into Unity and click play, you can check the radio messages received on console.
 (if you are using PC just change the port name in unity script to COM 1 or 2 or 3 etc instead)
 
 
